@@ -1,7 +1,6 @@
 {
-    "_type": "https://openminds.ebrains.eu/core/Channel",
+    "_type": "https://openminds.ebrains.eu/ephys/Channel",
     "required": [
-        "unitOfMeasurement",
         "internalIdentifier"
     ],
     "properties": {
@@ -13,18 +12,6 @@
             "_instruction": "Add the unit of measurement for this channel.",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement"
-            ]
-        },
-        "devices": {
-            "type": "array",
-            "minItems": 1,
-            "uniqueItems": true,
-            "_instruction": "Add all the devices used for this recording",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/core/hardwareVersion",
-                "https://openminds.ebrains.eu/ephys/Pipette",
-                "https://openminds.ebrains.eu/ephys/ElectrodeArray",
-                "https://openminds.ebrains.eu/ephys/Electrode"
             ]
         }
     }
